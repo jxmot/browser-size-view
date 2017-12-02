@@ -45,6 +45,10 @@ The viewer will display the following -
 
 This was a fun and useful project! And it got me to thinking about how else I could use local storage events. So after a few minutes I came up with what follows...
 
+## Appearance Improvements
+
+The look of the viewer is a bit rough, but it is just a *tool* after all. However, when I've got the time I'll work on the appearance and pretty it up a bit. 
+
 ## Semi-Remote Logger
 
 I might try replacing `console.log()` calls with something that will send the output to local storage. And then a remote viewer would display the output.
