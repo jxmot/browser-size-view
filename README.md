@@ -14,7 +14,7 @@ My method was to resize the window until the layout of the elements became undes
 
 I use Chrome for development so I searched the extensions for one that would provide *live* reporting of at least the width. But nothing worked as I needed. So I tried to think of ways to use JavaScript to convey data between tabs or browser instances. I knew that *local storage* is shared between pages from the same domain. But polling for data updates wasn't something I wanted to use here.
 
-After some web searches and some time I found out about *local storage events*.
+After some web searches and some time I found out about *local storage events*. And what you see here is the result of what I learned.
 
 # Running the Viewer
 
