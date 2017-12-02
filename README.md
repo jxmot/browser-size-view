@@ -34,7 +34,7 @@ The viewer will display the following -
 
 * The name of the page. For example if your getting data from `index.html` **`index`** will be seen.
 * The width and the height of the page when it was first loaded.
-* The width and the height of the page as it's being resized. This will update as the page is resized.
+* The width and the height of the page, the values will be updated as it's being resized.
 * The current mouse position over the viewed page.
 
 <p align="center">
