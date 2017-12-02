@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Web Page Dimension Viewer</title>
+</head>
+</head>
+<!--
+    Browse the viewsize.html file in its own browser
+    window. And then browse the sendsize.html file in its
+    own window.
+
+    When the sendsize.html file is reloaded, resized, or
+    if the mouse moves over it that data will be seen in
+    the viewsize.html window.
+
+    NOTE: The localStorage events will only work if both
+    files are delivered from an actual server. The use of
+    "file://" will not work.
+-->
+<body onresize="showsize()">
+    <br>
+    <h3>Web Page Dimension Tool</h3>
+    <p>
+        This tool will allow you to have a <i>live</i> view of the
+        width and height of a separate browser window. For detailed
+        information please see the <a href="README.md" target="_blank">README</a>
+        file.
+    </p>
+    <p>
+        To run the demonstration click on each of the links below. 
+        <br><br>
+        <a href="viewsize.html" target="_blank">
+            Viewer (<i>right-clicking into a new instance of the
+            browser is recommneded</i>)
+        </a>
+        <br><br>
+        <a href="sendsize.html" target="_blank">Resize this page after it opens.</a>
+    </p>
+</body>
+</html>
