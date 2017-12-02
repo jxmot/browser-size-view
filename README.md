@@ -28,6 +28,19 @@ The files must reside on the same *server*. And accessing them directly from whe
 
 **2**) Open the `index.html` file in your browser and follow the instructions found there.
 
+## Results
+
+The viewer will display the following - 
+
+* The name of the page. For example if your getting data from `index.html` **`index`** will be seen.
+* The width and the height of the page when it was first loaded.
+* The width and the height of the page as it's being resized. This will update as the page is resized.
+* The current mouse position over the viewed page.
+
+<p align="center">
+  <img src="./mdimg/viewsize.png" alt="Viewer Example" txt="Viewer Example" style="border: 2px solid black"/>
+</p>
+
 # Future Development
 
 This was a fun and useful project! And it got me to thinking about how else I could use local storage events. So after a few minutes I came up with what follows...
