@@ -1,0 +1,22 @@
+{
+    "owner"    : "jxmot",
+    "repo"     : "browser-size-view",
+    "branch"   : "master",
+
+    "mdfilerem": true,
+    "mdfile"   : "README.md",
+
+    "pagetitle": "browser-size-view - README",
+
+    "gitdesc"  : true,
+    "metadesc" : "",
+
+    "gittopics": true,
+    "metakeyw" : "",
+
+    "metaauth" : "https://github.com/jxmot",
+
+    "genstatic": false,
+    "statname" : "./bsizeview.html"
+}
+
