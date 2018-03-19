@@ -5,6 +5,7 @@
 
     "mdfilerem": true,
     "mdfile"   : "README.md",
+    "mdpageopt": "./mdpageopt.json",
 
     "pagetitle": "browser-size-view - README",
 
@@ -17,6 +18,9 @@
     "metaauth" : "https://github.com/jxmot",
 
     "genstatic": false,
-    "statname" : "./bsizeview.html"
+    "statname" : "./bsizeview.html",
+
+    "oghead": false,
+    "ogjson": ""
 }
 
