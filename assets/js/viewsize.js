@@ -1,7 +1,19 @@
 /*
-    This code is capable becoming either end. It will automatically
-    select which role it plays based on whether or not the `onresize`
-    attribute is present in this page's <body> tag.
+    Browser Size and Mouse Position Viewer
+
+    A utility that remotely displays the viewport size of a browser 
+    window and the mouse position within the viewport.
+
+    (c) 2017 J.Motyl    https://github.com/jxmot/browser-size-view/LICENSE.md
+
+    This code is capable becoming either a sender or receiver of 
+    window and mouse data. When loaded it will automatically select 
+    which role it plays based on whether or not the `onresize` 
+    attribute is present in this page's <body> tag. For example it
+    should look something like this - 
+
+        <body onresize="showsize()">
+
 */
 if($('body').attr('onresize') === undefined) {
     // the receiver of the data is typically ran first,
@@ -34,18 +46,24 @@ if($('body').attr('onresize') === undefined) {
         page.innerHTML = data.page;
         // display the dimensions...
         if(event.key === 'load') {
+            // To display the raw storage data, 
+            // uncomment the line below - 
             //load.innerHTML = event.newValue;
             l_width.innerText  = 'W ' + data.w;
             l_height.innerText = 'H ' + data.h;
         }
 
         if(event.key === 'resize') {
+            // To display the raw storage data, 
+            // uncomment the line below - 
             //resize.innerHTML = event.newValue;
             r_width.innerText  = 'W ' + data.w;
             r_height.innerText = 'H ' + data.h;
         }
 
         if(event.key === 'mouse') {
+            // To display the raw storage data, 
+            // uncomment the line below - 
             //mouse.innerHTML = event.newValue;
             m_x.innerText  = 'X ' + data.x;
             m_y.innerText = 'Y ' + data.y;
