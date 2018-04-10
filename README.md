@@ -1,6 +1,6 @@
-# Web Page Size/Dimension Viewer
+# Web Page Size/Dimension/Mouse Position Viewer
 
-A utility that remotely displays the viewport size of a browser window.
+A utility that remotely displays the viewport size of a browser window and the mouse position within the viewport.
 
 # Overview
 
