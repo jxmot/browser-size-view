@@ -40,29 +40,29 @@ You can either host the files or load the page via `file:///C:/path/to/index.htm
 
 The viewer will display the following - 
 
-* The name of the page. For example if your getting data from `index.html` **`index`** will be seen.
+* The name of the page. For example if your getting data from `index.html` then **`index`** will be seen at the top of the page.
 * The width and the height of the page when it was first loaded.
 * The width and the height of the page, the values will be updated as it's being resized.
 * The current mouse position over the viewed page.
 
 <p align="center">
-  <img src="./mdimg/viewsize.png" alt="Viewer Example" txt="Viewer Example" style="width:30%;border: 2px solid black"/>
+  <img src="./mdimg/viewsize.png" alt="Viewer Example #1" txt="Viewer Example #1" style="width:30%;border: 2px solid black"/>
 </p>
 
 ## Browser Behavior
 
 Except for FireFox all of the other browsers I used behave as expected in regards to reporting the viewport size and mouse position. The only discrepancy I saw was the mouse position. When Firefox was used the mouse position would stop reporting below a fixed "line" within the browser viewport. Where other browsers would report the position across the entire viewport.
 
-The cause of the difference in behavior is determined by the particular browser's *user agent stylesheet*. This is the CSS styling that is used when the page has no CSS of its own.
+The cause of the difference in behavior is determined by the particular browser's *user agent stylesheet*. This is the CSS styling that is used when the page has no CSS of its own. The following images illustrate the differences, the highlighted areas represent the document *body*.
 
 **Chrome :**<br>
 <p align="center">
-  <img src="./mdimg/ch-viewsize.png" alt="Viewer Example" txt="Viewer Example" style="width:75%;border: 2px solid black"/>
+  <img src="./mdimg/ch-viewsize.png" alt="Viewer Example #2" txt="Viewer Example #2" style="width:75%;border: 2px solid black"/>
 </p>
 
 **FireFox :**<br>
 <p align="center">
-  <img src="./mdimg/ff-viewsize.png" alt="Viewer Example" txt="Viewer Example" style="width:75%;border: 2px solid black"/>
+  <img src="./mdimg/ff-viewsize.png" alt="Viewer Example #3" txt="Viewer Example #3" style="width:75%;border: 2px solid black"/>
 </p>
 
 
