@@ -65,6 +65,23 @@ The cause of the difference in behavior is determined by the particular browser'
   <img src="./mdimg/ff-viewsize.png" alt="Viewer Example #3" txt="Viewer Example #3" style="width:75%;border: 2px solid black"/>
 </p>
 
+## Real-World Usage
+
+The following shows the *minimum* changes that need to be made to any page where you need to view the size and mouse position - 
+
+```html
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body onresize="showsize()">
+    <div id="viewsize-link">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/viewsize.js"></script>
+</body>
+</html>
+```
 
 # Future Development
 
