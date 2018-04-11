@@ -75,7 +75,7 @@ if($('body').attr('onresize') === undefined) {
     var file = ''+location.pathname.split('/').slice(-1);
     var page = file.substring(0, file.lastIndexOf('.'));
 
-    // capture mouse movments...
+    // capture mouse movements...
     $("body").mousemove(function(e) {
         storeView({
             page:   page,
@@ -87,6 +87,9 @@ if($('body').attr('onresize') === undefined) {
 
     // on document ready...
     $(function() {
+        // Create the link to the viewer...
+        popupLink();
+
         // send the current dimensions and describe 
         // them as 'load'
         storeView({
@@ -110,5 +113,15 @@ if($('body').attr('onresize') === undefined) {
     // store the data...
     function storeView(view) {
         localStorage.setItem(view.event, JSON.stringify(view));
+    };
+
+    // create a link to the viewer
+    function popupLink() {
+        var target = $('#viewsize-link');
+        var para = $('<p>');
+        var link = $('<a>').attr('href', '#');
+        $(link).attr('onclick',"window.open('./viewsize.html','pagename','width=300,height=500')");
+        $(para).append($(link).text('click to open a pop-up'));
+        $(target).append($(para)).append($('<br>')).append($('<br>'));
     };
 }
