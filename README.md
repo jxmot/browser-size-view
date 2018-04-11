@@ -20,13 +20,21 @@ After some web searches and some time I found out about *local storage events*. 
 
 **Requirements :**
 
-The files must reside on the same *server*. And accessing them directly from where they're stored on your PC will not work.
+If using **Chrome**, **IE**, or **Edge** :
+
+The files must reside on the same *server*. And accessing them directly from where they're stored on your PC will not work. For example `file:///C:/path/to/index.html` will not work. But `http://localhost/path/to/index.html` will work.
+
+If using **FireFox** :
+
+You can either host the files or load the page via `file:///C:/path/to/index.html`. Either method will work. 
 
 ## Steps
 
-**1**) Copy all three HTML files to a location in your server's *public HTML* folder. Remember that one of the files is named `index.html` so don't over write an existing file.
+**1**) Create a folder called `temp` in your server's *public HTML* folder.
 
-**2**) Open the `index.html` file in your browser and follow the instructions found there.
+**2**) Copy both of HTML files and the `assets/js/` path and its file(s) to `temp`.
+
+**3**) Open the `index.html` file in your browser and follow the instructions found there.
 
 ## Results
 
@@ -38,8 +46,25 @@ The viewer will display the following -
 * The current mouse position over the viewed page.
 
 <p align="center">
-  <img src="./mdimg/viewsize.png" alt="Viewer Example" txt="Viewer Example" style="border: 2px solid black"/>
+  <img src="./mdimg/viewsize.png" alt="Viewer Example" txt="Viewer Example" style="width:30%;border: 2px solid black"/>
 </p>
+
+## Browser Behavior
+
+Except for FireFox all of the other browsers I used behave as expected in regards to reporting the viewport size and mouse position. The only discrepancy I saw was the mouse position. When Firefox was used the mouse position would stop reporting below a fixed "line" within the browser viewport. Where other browsers would report the position across the entire viewport.
+
+The cause of the difference in behavior is determined by the particular browser's *user agent stylesheet*. This is the CSS styling that is used when the page has no CSS of its own.
+
+**Chrome :**<br>
+<p align="center">
+  <img src="./mdimg/ch-viewsize.png" alt="Viewer Example" txt="Viewer Example" style="width:75%;border: 2px solid black"/>
+</p>
+
+**FireFox :**<br>
+<p align="center">
+  <img src="./mdimg/ff-viewsize.png" alt="Viewer Example" txt="Viewer Example" style="width:75%;border: 2px solid black"/>
+</p>
+
 
 # Future Development
 
