@@ -88,7 +88,7 @@ if($('body').attr('onresize') === undefined) {
     // on document ready...
     $(function() {
         // Create the link to the viewer...
-        popupLink();
+        if($('#viewsize-link').length > 0) popupLink();
 
         // send the current dimensions and describe 
         // them as 'load'
