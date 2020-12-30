@@ -117,3 +117,5 @@ I can't really say how useful or practical it would actually be to have a CLI fo
 * [storage - Event reference | MDN](https://developer.mozilla.org/en-US/docs/Web/Events/storage)
 * [HTML5 Local Storage](http://tutorials.jenkov.com/html5/local-storage.html)
 
+---
+<img src="http://webexperiment.info/extcounter/mdcount.php?id=browser-size-view">
